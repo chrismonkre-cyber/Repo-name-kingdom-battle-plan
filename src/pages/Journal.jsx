@@ -49,10 +49,10 @@ export default function Journal() {
       <HeroSection title="Battle Journal" subtitle="Write what God is showing you. Record the victory." />
       <div className="max-w-3xl mx-auto px-4 pb-8">
         <GlassCard className="mb-6">
-          <h3 className="font-cinzel text-yellow-500 text-sm font-semibold mb-2">Journal Prompts</h3>
+          <h3 className="font-cinzel text-yellow-400 text-sm font-semibold mb-2">Journal Prompts</h3>
           <ul className="space-y-1">
             {prompts.map(p => (
-              <li key={p} className="font-lora text-yellow-100/70 text-xs cursor-pointer hover:text-yellow-300 transition-colors" onClick={() => setContent(prev => prev ? prev + "\n" + p : p)}>
+              <li key={p} className="font-lora text-yellow-200 text-xs cursor-pointer hover:text-yellow-300 transition-colors" onClick={() => setContent(prev => prev ? prev + "\n" + p : p)}>
                 • {p}
               </li>
             ))}
@@ -85,9 +85,9 @@ export default function Journal() {
               <GlassCard key={e.id}>
                 <div className="flex justify-between items-start gap-2">
                   <div className="flex-1 min-w-0">
-                    <h4 className="font-cinzel text-yellow-400 text-sm font-semibold">{e.title}</h4>
-                    <p className="text-yellow-100/50 text-xs mb-1">{e.date}</p>
-                    <p className="font-lora text-yellow-100/80 text-sm whitespace-pre-wrap">{e.content}</p>
+                    <h4 className="font-cinzel text-yellow-300 text-sm font-semibold">{e.title}</h4>
+                    <p className="text-yellow-200/70 text-xs mb-1">{e.date}</p>
+                    <p className="font-lora text-white text-sm whitespace-pre-wrap">{e.content}</p>
                   </div>
                   <button onClick={() => remove(e.id)} className="text-red-400 hover:text-red-300 flex-shrink-0 p-1">
                     <Trash2 size={16} />

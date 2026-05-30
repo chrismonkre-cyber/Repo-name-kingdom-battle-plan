@@ -34,7 +34,7 @@ export default function Daily() {
         </div>
 
         <GlassCard>
-          <h2 className="font-cinzel font-bold text-yellow-400 text-xl md:text-2xl mb-4">{d.theme}</h2>
+          <h2 className="font-cinzel font-bold text-yellow-300 text-xl md:text-2xl mb-4" style={{ textShadow: "0 0 20px rgba(255,210,80,0.4)" }}>{d.theme}</h2>
           {[
             ["Scripture", d.scripture],
             ["Encouragement", d.encouragement],
@@ -44,8 +44,8 @@ export default function Daily() {
             ["Reflection", d.reflection],
           ].map(([label, text]) => (
             <div key={label} className="mb-4">
-              <h4 className="font-cinzel text-yellow-500 text-sm font-semibold mb-1">{label}</h4>
-              <p className="font-lora text-yellow-100/85 text-sm leading-relaxed">{text}</p>
+              <h4 className="font-cinzel text-yellow-400 text-sm font-semibold mb-1">{label}</h4>
+              <p className="font-lora text-white text-sm leading-relaxed">{text}</p>
             </div>
           ))}
         </GlassCard>

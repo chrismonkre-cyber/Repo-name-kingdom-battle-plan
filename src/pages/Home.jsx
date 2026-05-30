@@ -25,7 +25,7 @@ export default function Home() {
       <HeroSection title="Kingdom Battle Plan" subtitle="Stand firm. Pray boldly. Walk in victory." />
       <div className="max-w-4xl mx-auto px-4 pb-8">
         <GlassCard className="text-center mb-8">
-          <p className="font-lora text-yellow-100/90 text-sm md:text-base leading-relaxed">
+          <p className="font-lora text-white text-sm md:text-base leading-relaxed">
             This Spirit-filled companion helps you stand on the Word of God, resist fear, renew your mind, pray with authority, and walk in the victory Christ has already won.
           </p>
         </GlassCard>
@@ -44,8 +44,8 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-4 mb-10">
           {features.map(f => (
             <GlassCard key={f.title}>
-              <h3 className="font-cinzel font-bold text-yellow-400 text-lg mb-2">{f.title}</h3>
-              <p className="font-lora text-yellow-100/80 text-sm">{f.text}</p>
+              <h3 className="font-cinzel font-bold text-yellow-300 text-lg mb-2">{f.title}</h3>
+              <p className="font-lora text-white text-sm">{f.text}</p>
             </GlassCard>
           ))}
         </div>

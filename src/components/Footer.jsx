@@ -1,12 +1,20 @@
 const footerLinks = [
-  { label: "Main Site", href: "https://kingdommandateministry.com" },
+  { label: "Main Ministry Site", href: "https://kingdommandateministry.com" },
+  { label: "The Bible Companion", href: "https://thebiblecompanion.online" },
+  { label: "Prayer Wall", href: "https://prayer.kingdommandateministry.com" },
+  { label: "Fire Companion", href: "https://fire.kingdommandateministry.com" },
   { label: "Pathway", href: "https://pathway.kingdommandateministry.com" },
   { label: "Declarations", href: "https://declarations.kingdommandateministry.com" },
   { label: "Healing Room", href: "https://healing.kingdommandateministry.com" },
   { label: "Purpose Finder", href: "https://purpose.kingdommandateministry.com" },
   { label: "Identity", href: "https://identity.kingdommandateministry.com" },
   { label: "Gift Finder", href: "https://gifts.kingdommandateministry.com" },
-  { label: "Bible Companion", href: "https://thebiblecompanion.online" },
+  { label: "Battle Plan", href: "https://battle.kingdommandateministry.com" },
+  { label: "Grace Vault", href: "https://grace.kingdommandateministry.com" },
+  { label: "Revival Fire", href: "https://revival.kingdommandateministry.com" },
+  { label: "Family Altar", href: "https://family.kingdommandateministry.com" },
+  { label: "Marketplace Mandate", href: "https://marketplace.kingdommandateministry.com" },
+  { label: "Kingdom Freedom", href: "https://freedom.kingdommandateministry.com" },
   { label: "YouTube", href: "https://www.youtube.com/@KingdomMandateMinistry" },
   { label: "Contact", href: "mailto:kingdommm.chris@gmail.com" },
   { label: "Partner / Sow", href: "https://www.paypal.com/donate/?business=kingdommm.chris%40gmail.com" },
@@ -18,12 +26,12 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto text-center">
         <div className="flex flex-wrap justify-center gap-3 mb-6">
           {footerLinks.map(l => (
-            <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" className="text-yellow-400/80 hover:text-yellow-300 text-xs font-lora transition-colors">
+            <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" className="text-yellow-300/90 hover:text-yellow-200 text-xs font-lora transition-colors">
               {l.label}
             </a>
           ))}
         </div>
-        <p className="text-yellow-100/60 text-xs font-lora">© 2026 Kingdom Mandate Ministry | Built for the Glory of GOD, by the Grace of GOD</p>
+        <p className="text-yellow-200/80 text-xs font-lora">© 2026 Kingdom Mandate Ministry | Built for the Glory of GOD, by the Grace of GOD</p>
       </div>
     </footer>
   );

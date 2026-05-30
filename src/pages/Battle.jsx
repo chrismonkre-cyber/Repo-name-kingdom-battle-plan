@@ -35,12 +35,12 @@ export default function Battle() {
               onClick={() => setOpenIdx(openIdx === i ? null : i)}
               className="w-full flex items-center justify-between px-5 py-4 cursor-pointer text-left"
             >
-              <h3 className="font-cinzel font-bold text-yellow-400 text-sm md:text-base">{p.title}</h3>
+              <h3 className="font-cinzel font-bold text-yellow-300 text-sm md:text-base">{p.title}</h3>
               <ChevronDown size={20} className={`text-yellow-500 transition-transform duration-200 flex-shrink-0 ${openIdx === i ? "rotate-180" : ""}`} />
             </button>
             {openIdx === i && (
               <div className="px-5 pb-5 space-y-3">
-                <p className="font-lora text-yellow-100/80 text-sm italic">{p.desc}</p>
+                <p className="font-lora text-white/90 text-sm italic">{p.desc}</p>
                 {[
                   ["Scripture", p.scripture],
                   ["What it looks like", p.looks],
@@ -49,8 +49,8 @@ export default function Battle() {
                   ["Action Step", p.action],
                 ].map(([label, text]) => (
                   <div key={label}>
-                    <h4 className="font-cinzel text-yellow-500 text-xs font-semibold mb-0.5">{label}</h4>
-                    <p className="font-lora text-yellow-100/85 text-sm leading-relaxed">{text}</p>
+                    <h4 className="font-cinzel text-yellow-400 text-xs font-semibold mb-0.5">{label}</h4>
+                    <p className="font-lora text-white text-sm leading-relaxed">{text}</p>
                   </div>
                 ))}
               </div>

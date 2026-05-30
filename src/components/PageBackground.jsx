@@ -11,8 +11,8 @@ export default function PageBackground({ desktopImg, mobileImg, children }) {
         className="md:hidden fixed inset-0 bg-cover bg-center bg-no-repeat -z-10"
         style={{ backgroundImage: `url(${mobileImg})` }}
       />
-      {/* Dark burgundy overlay */}
-      <div className="fixed inset-0 bg-gradient-to-b from-black/40 via-red-950/30 to-black/50 -z-10 pointer-events-none" />
+      {/* Light burgundy overlay — brightened */}
+      <div className="fixed inset-0 bg-gradient-to-b from-black/20 via-red-950/15 to-black/30 -z-10 pointer-events-none" />
       <div className="relative z-10">{children}</div>
     </div>
   );

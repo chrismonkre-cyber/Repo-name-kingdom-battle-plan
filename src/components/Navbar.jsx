@@ -30,7 +30,7 @@ export default function Navbar() {
             <Link
               key={l.to}
               to={l.to}
-              className={`font-cinzel text-sm tracking-wide transition-colors ${pathname === l.to ? "text-yellow-400" : "text-yellow-100/80 hover:text-yellow-300"}`}
+              className={`font-cinzel text-sm tracking-wide transition-colors ${pathname === l.to ? "text-yellow-300 font-bold" : "text-yellow-100 hover:text-yellow-300"}`}
             >
               {l.label}
             </Link>
@@ -51,7 +51,7 @@ export default function Navbar() {
               key={l.to}
               to={l.to}
               onClick={() => setOpen(false)}
-              className={`block px-6 py-3 font-cinzel text-sm tracking-wide border-b border-yellow-900/20 ${pathname === l.to ? "text-yellow-400 bg-yellow-900/20" : "text-yellow-100/80"}`}
+              className={`block px-6 py-3 font-cinzel text-sm tracking-wide border-b border-yellow-900/20 ${pathname === l.to ? "text-yellow-300 font-bold bg-yellow-900/20" : "text-yellow-100"}`}
             >
               {l.label}
             </Link>
